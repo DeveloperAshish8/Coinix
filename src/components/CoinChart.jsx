@@ -45,6 +45,13 @@ const CoinChart = ({currency}) => {
         CoinChartData()
     },[currency,id,days])
 
+    let x = '3', y = 1;
+
+    if(window.innerWidth <= 600){
+      x = '1';
+      y = 0.3;
+    }
+
     const myData={
         labels: chartData.map((value) => {
             const date = new Date(value[0])
@@ -57,8 +64,8 @@ const CoinChart = ({currency}) => {
             {
             label: `Price in Past Days ${days} in ${currency}`,
             data:  chartData.map((value)=>value[1]),
-            borderColor: '#00b386',
-            borderWidth: '3'
+            borderColor: '#0E2026',
+             borderWidth: x
             }
         ]
     }
@@ -72,10 +79,10 @@ const CoinChart = ({currency}) => {
         <Line data={myData} options={{
           elements:{
               point:{
-                  radius:1, 
+                  radius:y, 
               }
           }
-        }} style={{marginTop:"3rem", width:"60rem"}} />
+        }} style={{marginTop:"3rem", width:"60rem", strokewidth: "50"}} />
   
   <div className='btns-2' style={{marginTop:"15px"}}>
                <button onClick={()=>setDays(1)} >24 hours</button>

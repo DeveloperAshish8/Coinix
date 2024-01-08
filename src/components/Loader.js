@@ -9,7 +9,7 @@ const Loader = props => {
   visible={true}
   height="80"
   width="80"
-  color="#00b386"
+  color="#0E2026"
   radius="9"
   ariaLabel="three-dots-loading"
   wrapperStyle={{}}

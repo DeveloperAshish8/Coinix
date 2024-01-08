@@ -3,7 +3,7 @@ import Header from './Header'
 import axios from 'axios'
 import { Baseurl } from './baseUrl'
 import Loader from './Loader'
-import Model from './Model'
+import Hero from './Hero'
 
 const Exchange = () => {
   const [Loading, setLoading] = useState(true);
@@ -30,7 +30,7 @@ const Exchange = () => {
     {
     Loading ? <Loader/> : <>
     <Header/>
-    <Model/>
+    <Hero/>
       <div>
         {
         exchanges.map((item,i)=> {

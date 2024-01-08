@@ -110,7 +110,7 @@ const CoinCard = ({ coinData, i, id, currencySymbol }) => {
         >
           {profit
             ? "+" + coinData.price_change_percentage_24h.toFixed(2)
-            : coinData.price_change_percentage_24h.toFixed(2)}
+            : coinData.price_change_percentage_24h.toFixed(2)}%
         </div>
       </div>
     </Link>
