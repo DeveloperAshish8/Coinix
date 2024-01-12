@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Loader from "./Loader";
-import { Space, Switch } from "antd";
 import { Baseurl } from "./baseUrl";
 import { useParams } from "react-router-dom";
 import axios from "axios";
