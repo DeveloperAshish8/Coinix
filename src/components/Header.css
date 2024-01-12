@@ -8,11 +8,13 @@
     position: fixed;
     width: 100%;
     top: 0%;
+    z-index: 2;
 }
 
 .navbar ul{
     display: flex;
     list-style: none;
+    margin-top:0.8rem;
 
 }
 .navbar ul li a{
@@ -25,13 +27,9 @@
 .logo{
     display: flex;
     align-items: flex-start;
-    color: black;
 }
 
-@media only screen and (max-width: 600px) {
-    .logo h1{
-        font-size: 20px;
-    }  
+@media only screen and (max-width: 600px) { 
     .navbar{
         display: flex;
         justify-content: space-evenly;
