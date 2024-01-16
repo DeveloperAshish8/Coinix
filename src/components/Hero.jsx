@@ -20,8 +20,8 @@ const Hero = () => {
             </Link>
       </div>
         <div className="right">
-            <img className='bitcoin' src="/bitcoin.png" alt='Bitcoin BG' width={'260px'} height={'220px'}/>
-            <img className='tether' src="/tether.png" alt='Tether BG' width={'190px'} height={'180px'}/>
+            <img className='bitcoin' src="/bitcoin.png" alt='Bitcoin BG' width={'500px'} height={'420px'}/>
+            
         </div>
         </div>
       

@@ -75,10 +75,8 @@
 
 .bitcoin {
   object-fit: contain;
-  position: absolute;
-  right: -10px;
-  top: -120px;
   animation: bounce 5s infinite;
+  margin-top: 4rem;
 }
 
 @keyframes bounce {
@@ -87,13 +85,6 @@
   60%{transform: translate(-10px);}
 }
 
-.tether {
-  object-fit: contain;
-  position: absolute;
-  left: 150px;
-  top: 30px;
-  animation: bounce 7s infinite;
-}
 
 
 

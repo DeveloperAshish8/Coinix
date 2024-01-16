@@ -4,6 +4,7 @@ import axios from 'axios'
 import { Baseurl } from './baseUrl'
 import Loader from './Loader'
 import Hero from './Hero'
+import Space from './Space'
 
 const Exchange = () => {
   const [Loading, setLoading] = useState(true);
@@ -31,6 +32,10 @@ const Exchange = () => {
     Loading ? <Loader/> : <>
     <Header/>
     <Hero/>
+    <Space/>
+    <div className="heading" style={{marginTop:" 4rem", maxWidth:"1220px", marginLeft:"auto", marginRight:"auto", paddingLeft: "18px", paddingRight: "18px"}}>
+                <h6>Crypto's sorted according to their trust scores.</h6>
+            </div>
       <div>
         {
         exchanges.map((item,i)=> {

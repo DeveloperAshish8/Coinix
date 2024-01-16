@@ -72,7 +72,7 @@ const CoinChart = ({currency}) => {
   return (
     <>
      {
-      chartData.length === 0 ? ( <Loader/>) : (
+      chartData.length === 0 ? ( <Loader style={{width:"70%"}}/>) : (
 
         <div className='line'>
         {/* <Line data={myData} />  */}
