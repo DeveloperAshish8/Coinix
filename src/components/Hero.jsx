@@ -20,7 +20,7 @@ const Hero = () => {
             </Link>
       </div>
         <div className="right">
-            <img className='bitcoin' src="/bitcoin.png" alt='Bitcoin BG' width={'500px'} height={'420px'}/>
+            <img className='portfolio-image' src="/portfolio.svg" alt='Portfolio' width={'80%'} />
             
         </div>
         </div>

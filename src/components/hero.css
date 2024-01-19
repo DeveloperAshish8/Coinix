@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;600&family=Poppins:wght@200;400;800&family=Public+Sans:wght@600&display=swap");
 .main {
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgba(24, 91, 100, 1) 0%,
     rgba(17, 65, 71, 1) 35%
-  );
+  ); */
+  background-color: #f8f8f8;
   overflow: clip;
   border-bottom-right-radius:50%;
   border-bottom-left-radius: 10%;
@@ -23,7 +24,7 @@
   padding-right: 14px;
   align-items: center;
   flex-direction: row;
-  color: white;
+  color: black;
   font-family: "Manrope", sans-serif;
   margin-left: 15%;
   margin-right: 20%;
@@ -42,7 +43,8 @@
 }
 
 .left p {
-  color: rgba(255, 255, 255, 0.6);
+  opacity: .7;
+  color: #1c2951;
   font-size: 20px;
   margin-top: 10px;
   font-style: normal;
@@ -56,8 +58,8 @@
   height: 50px;
   border-radius:40px;
    width: 150px; 
-   background-color: white;
-    color:#0E2026;
+   background-color: #1c2951;
+    color:white;
     font-weight: 550;
 }
 
@@ -66,16 +68,14 @@
     color:white;
 }
 .right {
-  position: relative;
   width: 50%;
-  gap: 180px;
   display: flex;
   margin: 0 50px;
 }
 
-.bitcoin {
+.portfolio-image {
   object-fit: contain;
-  animation: bounce 5s infinite;
+  /* animation: bounce 5s infinite; */
   margin-top: 4rem;
 }
 
@@ -92,14 +92,14 @@
 @media only screen and (max-width: 600px) {
   .main{
     border-bottom-left-radius: 2%;
-    border-bottom-right-radius:30%;
+    border-bottom-right-radius:2%;
   }
   .container {
     flex-direction: column;
     padding-right: 16px;
     padding-left: 16px;
     padding-top: 48px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
     margin: 0 4%;
   }
 
@@ -116,6 +116,18 @@
   }
 
   .right{
-    display: none;
+    margin: 3rem 0;
+    width: 160%;
+    overflow-x: hidden;
+    transform: translate(7%);
+    padding: 0;
+
   }
+
+  .portfolio-image{
+    margin:0;
+  }
+  /* .right img{
+    height: 200px;
+  } */
 }
