@@ -5,6 +5,7 @@ import { Baseurl } from './baseUrl'
 import Loader from './Loader'
 import Hero from './Hero'
 import Space from './Space'
+import Footer from './Footer'
 
 const Exchange = () => {
   const [Loading, setLoading] = useState(true);
@@ -34,11 +35,11 @@ const Exchange = () => {
     <Hero/>
     <Space/>
     <div className="heading" style={{marginTop:" 4rem", maxWidth:"1220px", marginLeft:"auto", marginRight:"auto", paddingLeft: "18px", paddingRight: "18px"}}>
-                <h6>Crypto's sorted according to their trust scores.</h6>
+                <h6>Top 10 Crypto's according to their trust scores.</h6>
             </div>
       <div>
         {
-        exchanges.map((item,i)=> {
+        exchanges.slice(0,10).map((item,i)=> {
           return(
         <div key={i} className="ex-cards"> 
            <div className="image">
@@ -52,7 +53,8 @@ const Exchange = () => {
       })
       }
       </div>
-    </>
+      <Footer/>
+      </>
     }
     </>
   )

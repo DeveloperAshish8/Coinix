@@ -72,6 +72,7 @@ const CoinDetails = () => {
             </div>
             <CoinChart  currency={currency}/>
           </div>
+          
         </>
       )}
     </>
